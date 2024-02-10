@@ -1,0 +1,203 @@
+<!-- YANG NYURI CODE WEB YTEAM -->
+<!-- RECODE WEB KGA IJIN MANDUL 7 TURUNAN -->
+<!-- MINIMAL IJIN DEK -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nusantara Island | Back To Old Era</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .navbar-custom {
+            background-color: rgba(0, 0, 0, 0.8) !important;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            color: white;
+            z-index: 1000;
+        }
+
+        .navbar-custom .nav-link {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .navbar-custom .nav-link.active {
+            color: white;
+        }
+
+        .navbar-toggler {
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+
+        .navbar-toggler:focus {
+            border-color: transparent !important;
+        }
+
+        .footer-custom {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 20px 0;
+            z-index: 1000;
+        }
+
+        body {
+            background-image: url('path/background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            padding-top: 120px;
+            padding-bottom: 120px;
+            margin-bottom: 120px;
+            overflow-y: auto;
+        }
+
+        @media (min-width: 992px) {
+            body {
+                padding-bottom: 70px;
+                margin-bottom: 70px;
+            }
+        }
+
+        .content-box {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            position: relative;
+            margin-bottom: 20px;
+            text-align: center;
+            transition: opacity 0.5s ease;
+            opacity: 1;
+        }
+
+        .owner-box .owner-img,
+        .admin-box .admin-img,
+        .helper-box .helper-img,
+        .police-box .police-img,
+        .builder-box .builder-img {
+            max-width: 20%;
+            border-radius: 20%;
+        }
+
+        .hidden {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
+        <a class="navbar-brand" href="#">
+            <img src="./path/logo.png" alt="Logo" height="30">
+            <span class="ml-2 font-weight-bold">NUSANTARA ISLAND</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html"><i class="fas fa-home"></i> | Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="rank.html"><i class="fas fa-info-circle"></i> | Staff List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rank.html"><i class="fas fa-cogs"></i> | Buy Rank</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://wa.me/6285742489245"><i class="fas fa-envelope"></i> | Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div id="owner-box" class="content-box owner-box">
+                    <h3>Owner</h3>
+                    <img src="path/owner.jpg" alt="Profil Owner" class="rounded-circle owner-img">
+                    <br><br>
+                    <p>Gamertag : CultureSwing2831</p>
+                    <p>Whatsapp : +6285742489245</p>
+                </div>
+
+                <div id="admin-box" class="content-box admin-box">
+                    <h3>Admin</h3>
+                    <img src="path/owner.jpg" alt="Profil Admin" class="rounded-circle admin-img">
+                    <br><br>
+                    <p>Gamertag : -</p>
+                    <p>Whatsapp : -</p>
+                </div>
+
+                <div id="helper-box" class="content-box helper-box">
+                    <h3>Helper</h3>
+                    <img src="path/owner.jpg" alt="Profil Helper" class="rounded-circle helper-img">
+                    <br><br>
+                    <p>Gamertag : -</p>
+                    <p>Whatsapp: -</p>
+                </div>
+
+                <div id="police-box" class="content-box hidden police-box">
+                    <h3>Police</h3>
+                    <img src="path/owner.jpg" alt="Profil Police" class="rounded-circle police-img">
+                    <br><br>
+                    <p>Gamertag : -</p>
+                    <p>Whatsapp : -</p>
+                </div>
+
+                <div id="builder-box" class="content-box hidden builder-box">
+                    <h3>Builder</h3>
+                    <img src="path/owner.jpg" alt="Profil Builder" class="rounded-circle builder-img">
+                    <br><br>
+                    <p>Gamertag : -</p>
+                    <p>Whatsapp : -</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-custom text-center py-3">
+        <p>Hak Cipta &copy; Nusantara Island <i class="fas fa-code"></i></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            var policeBox = document.getElementById('police-box');
+            var builderBox = document.getElementById('builder-box');
+            var ownerBox = document.getElementById('owner-box');
+            var adminBox = document.getElementById('admin-box');
+            var helperBox = document.getElementById('helper-box');
+            var windowTop = window.scrollY || document.documentElement.scrollTop;
+
+            if (windowTop > 10) {
+                policeBox.classList.remove('hidden');
+                builderBox.classList.remove('hidden');
+                ownerBox.classList.add('hidden');
+                adminBox.classList.add('hidden');
+                helperBox.classList.remove('hidden');
+            } else {
+                policeBox.classList.add('hidden');
+                builderBox.classList.add('hidden');
+                ownerBox.classList.remove('hidden');
+                adminBox.classList.remove('hidden');
+                helperBox.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
